@@ -4,18 +4,6 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[][]>([
   [
     {
-      label: 'Job Website',
-      icon: 'i-lucide-home',
-      to: '/home'
-    },
-    {
-      label: 'Applications',
-      icon: 'i-lucide-file-text',
-      to: '/applications'
-    }
-  ],
-  [
-    {
       label: 'My Jobs',
       icon: 'i-lucide-book-open',
       to: '/userJobs',
@@ -42,43 +30,54 @@ const items = ref<NavigationMenuItem[][]>([
       icon: 'i-lucide-calendar',
       to: '/calendar'
     }
-  ],
-  [
-    {
-      label: 'GitHub',
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/Nickyrayy/Jobs',
-      target: '_blank'
-    },
-    {
-      label: 'Help',
-      icon: 'i-lucide-circle-help',
-      disabled: true
-    }
-  ],
-  [
-    {
-      label: 'Profile',
-      icon: 'i-lucide-user',
-      to: '/profile'
-    },
-    {
-      label: 'Settings',
-      icon: 'i-lucide-settings',
-      to: '/settings'
-    },
-    {
-      label: 'Logout',
-      icon: 'i-lucide-log-out',
-      to: '/logout'
-    }
   ]
 ])
 </script>
 
 <template>
-  <UNavigationMenu 
-  orientation="vertical" 
-  :items="items" 
-  class="data-[orientation=vertical]:w-48 h-screen" />
+  <div class="flex flex-col h-screen p-0 border-r border-gray-200 dark:border-gray-800 w-48 bg-grey-700">
+    <UButton
+        icon="i-lucide-home"
+        to="/home"
+        variant="link"
+        label="Job Website"
+        class="
+          justify-center
+          text-base
+          m-2
+        "
+      />
+
+    <UInput
+      icon="i-lucide-search" 
+      placeholder="Search..." 
+      class="
+        m-2
+        mb-6
+        rounded-full
+      "
+      />
+
+    <UNavigationMenu 
+    orientation="vertical" 
+    :items="items" 
+    class="
+    data-[orientation=vertical]:w-48 
+    " 
+    />
+
+    <div class="flex-1" />
+
+    <UButton
+      label = 'GitHub'
+      icon = 'i-simple-icons-github'
+      to = 'https://github.com/Nickyrayy/Jobs'
+      target = '_blank'
+      class="
+        m-4
+        rounded-full
+      "
+    />
+
+  </div>
 </template>

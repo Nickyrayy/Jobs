@@ -3,9 +3,9 @@ import navBar from '~/components/navBar.vue';
 </script>
 
 <template>
-  <div>
+  <div class="flex max-h-screen">
     <navBar />
-    <main class="container mx-auto p-6">
+    <main class="flex-1 container mx-auto p-6">
       <slot />
     </main>
     </div>

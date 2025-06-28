@@ -1,3 +1,3 @@
 <template>
-    <div>Specifics</div>
+    <div> {{ $route.params.id }} Job Specifics</div>
 </template>
