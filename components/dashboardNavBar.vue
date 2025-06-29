@@ -37,9 +37,9 @@ const items = ref<NavigationMenuItem[][]>([
 <template>
   <div 
     class="
-          fixed top-0 left-0 h-screen w-48 m-0
+          fixed top-0 left-0 h-screen w-1/10 m-0
           flex flex-col  
-          bg-grey-700 text-white shadow-lg">
+          bg-secondary-500 dark:bg-secondary-800 text-primary shadow-2xl">
     <UButton
         icon="i-lucide-home"
         to="/userDashboard"
@@ -66,7 +66,8 @@ const items = ref<NavigationMenuItem[][]>([
     orientation="vertical" 
     :items="items" 
     class="
-    data-[orientation=vertical]:w-48 
+    data-[orientation=vertical]:
+    w-full
     " 
     />
 
@@ -80,6 +81,7 @@ const items = ref<NavigationMenuItem[][]>([
       class="
         m-4
         rounded-full
+        shadow-lg
       "
     />
 

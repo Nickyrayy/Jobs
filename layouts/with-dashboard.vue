@@ -8,7 +8,7 @@ import topNavBar from '~/components/topNavBar.vue';
     <aside class="shrink-0">
       <dashboardNavBar />
     </aside>
-    <div class="ml-48 flex flex-col flex-1 overflow-hidden">
+    <div class="ml-auto flex flex-col flex-1 overflow-hidden">
       <header class="shrink-0">
         <topNavBar />
       </header>

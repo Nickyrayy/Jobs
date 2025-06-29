@@ -12,6 +12,7 @@ const items = ref<NavigationMenuItem[][]>([
         label: 'Job Search',
         icon: 'i-lucide-briefcase',
         to: '/jobs',
+        class: ''
     },
     {
         label: 'Dashboard',
@@ -30,5 +31,8 @@ const items = ref<NavigationMenuItem[][]>([
             variant="link" 
             class="
             w-full
+            bg-neutral-600 
+            dark:bg-neutral-800
+            shadow-xl
             " />
 </template>
