@@ -35,7 +35,11 @@ const items = ref<NavigationMenuItem[][]>([
 </script>
 
 <template>
-  <div class="flex flex-col h-screen p-0 border-r border-gray-200 dark:border-gray-800 w-48 bg-grey-700">
+  <div 
+    class="
+          fixed top-0 left-0 h-screen w-48 m-0
+          flex flex-col  
+          bg-grey-700 text-white shadow-lg">
     <UButton
         icon="i-lucide-home"
         to="/userDashboard"

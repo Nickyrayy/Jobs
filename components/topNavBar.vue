@@ -24,16 +24,11 @@ const items = ref<NavigationMenuItem[][]>([
 </script>
 
 <template>
-    <div class="flex-row">
         <UNavigationMenu 
             orientation="horizontal" 
-            :items="items" 
+            :items="items"
+            variant="link" 
             class="
             w-full
-            " 
-        />
-
-        <div class="flex-1" />
-
-    </div>
+            " />
 </template>
