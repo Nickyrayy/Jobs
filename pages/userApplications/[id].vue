@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <div>About page</div>
+    <div> {{ $route.params.id }} Job Specifics</div>
 </template>

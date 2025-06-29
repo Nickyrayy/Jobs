@@ -4,24 +4,24 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[][]>([
   [
     {
-      label: 'My Jobs',
-      icon: 'i-lucide-book-open',
-      to: '/userJobs',
+      label: 'My Applications',
+      icon: 'i-lucide-briefcase',
+      to: '/userApplications',
       children: [
         {
-          label: 'Job 1',
-          description: 'Job 1',
-          to: '/userJobs/1'
+          label: 'Application 1',
+          description: 'Application 1',
+          to: '/userApplications/1'
         },
         {
-          label: 'Job 2',
-          description: 'Job 2',
-          to: '/userJobs/2'
+          label: 'Application 2',
+          description: 'Application 2',
+          to: '/userApplications/2'
         },
         {
-          label: 'Job 3',
-          description: 'Job 3',
-          to: '/userJobs/3'
+          label: 'Application 3',
+          description: 'Application 3',
+          to: '/userApplications/3'
         },
       ]
     },
@@ -38,9 +38,9 @@ const items = ref<NavigationMenuItem[][]>([
   <div class="flex flex-col h-screen p-0 border-r border-gray-200 dark:border-gray-800 w-48 bg-grey-700">
     <UButton
         icon="i-lucide-home"
-        to="/home"
+        to="/userDashboard"
         variant="link"
-        label="Job Website"
+        label="User Dashboard"
         class="
           justify-center
           text-base
@@ -50,7 +50,7 @@ const items = ref<NavigationMenuItem[][]>([
 
     <UInput
       icon="i-lucide-search" 
-      placeholder="Search..." 
+      placeholder="Search Applications..." 
       class="
         m-2
         mb-6

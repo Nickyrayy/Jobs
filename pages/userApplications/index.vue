@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <div>About page</div>
+    <div>My Jobs</div>
 </template>
